@@ -1,0 +1,233 @@
+/* -------------------- Navbar  -------------------- */
+.navbar {
+    background-color: #e9e3dcac;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 2px solid #784f1a;
+}
+
+.navbar-logo img {
+    height: 50px;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #784f1a;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: grey;
+}
+.navbar-toggler {
+    display: flex !important; 
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+    cursor: pointer;
+    border: none !important;
+    outline: none !important;
+    padding: 0;
+    width: 30px;
+    height: 20px;
+    position: relative;
+}
+
+.navbar-toggler::before,
+.navbar-toggler::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #56280d;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler::before {
+    width: 70%; 
+    align-self: flex-end;
+}
+
+.navbar-dropdown {
+    position: relative;
+}
+
+.navbar-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f4f0ec;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(30, 17, 1, 0.2);
+    z-index: 1000;
+    left: -140px;
+    top: 20px;
+    
+    border-radius: 15px; 
+    overflow: hidden;
+    border: 1px solid #784f1a3b;
+}
+.navbar-dropdown:hover .navbar-dropdown-content {
+    display: block;
+}
+.navbar-dropdown-content a {
+    color: #5f3c0e;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+.navbar-dropdown-content a:hover {
+    background-color: #784f1a3b;
+    color: #56280d;
+}
+.navbar-collapse {
+    display: flex !important;
+}
+/* ---------------------------------------------------- */
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .slider-container {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.slider {
+    accent-color: #9f692b; 
+}
+    .slider-container p {
+    text-align: center;
+    font-weight: bold;
+    }
+
+
+    .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+    .card {
+    border: none;
+    border-radius: 15px; 
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    border-radius: 12px;
+    height: 160px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+    .jumbotron {
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/hotels/background4.jpg");
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding: 2rem 1rem; 
+        margin-bottom: 0;
+    }
+    .display-4 {
+    font-family: 'Lora', serif;
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+
+/* Container for all cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Individual Card Styling */
+.card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Button Styling */
+.add-btn {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.add-to-trip {
+    background-color: #9f692bbc; 
+    color: white;
+    border: none;
+    padding: 6px 13px;
+    border-radius: 17px; 
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: auto; 
+}
+
+.add-to-trip:hover {
+    background-color: #cba57a95;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}

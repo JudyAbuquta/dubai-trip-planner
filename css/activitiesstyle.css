@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -------------------- Navbar -------------------- */
+.navbar {
+    background-color: #e9e3dcac;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 2px solid #784f1a;
+}
+
+.navbar-logo img {
+    height: 50px;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #784f1a;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: grey;
+}
+
+.navbar-toggler {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+    cursor: pointer;
+    border: none !important;
+    padding: 0;
+    width: 30px;
+    height: 20px;
+}
+
+.navbar-toggler::before,
+.navbar-toggler::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #56280d;
+}
+
+.navbar-toggler::before {
+    width: 70%;
+    align-self: flex-end;
+}
+
+.navbar-dropdown {
+    position: relative;
+}
+
+.navbar-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f4f0ec;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(30, 17, 1, 0.2);
+    z-index: 1000;
+    left: -140px;
+    top: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #784f1a3b;
+}
+
+.navbar-dropdown:hover .navbar-dropdown-content {
+    display: block;
+}
+
+.navbar-dropdown-content a {
+    color: #5f3c0e;
+    padding: 12px 20px;
+    display: block;
+    font-size: 14px;
+}
+
+.navbar-dropdown-content a:hover {
+    background-color: #784f1a3b;
+    color: #56280d;
+}
+
+/* -------------------- Body -------------------- */
+
+body {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* -------------------- Carousel (DO NOT BREAK) -------------------- */
+.carousel {
+    margin-bottom: 20px; 
+    height: 400px;
+}
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+.carousel .prev,
+.carousel .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: white;
+    background-color: rgba(159, 105, 43, 0.7);
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel .prev {
+    left: 15px;
+}
+
+.carousel .next {
+    right: 15px;
+}
+
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    font-family: 'Lora', serif;
+}
+.carousel-caption h1 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.carousel-caption h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+
+.carousel-caption p {
+    font-size: 18px;
+}
+
+/* -------------------- Back Button -------------------- */
+.back-home-button {
+    background-color: #9f692bbc;
+    color: white;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.back-home-button:hover {
+    background-color: #cba57a95;
+    transform: scale(1.05);
+}
+
+/* -------------------- Activities Section -------------------- */
+.big-text-container {
+    text-align: center;
+    margin-top: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container .headeing {
+    font-family: 'Lora', serif;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: #56280d;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+
+/* Grid */
+.container .activities-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+/* Cards */
+.container .activities-container .activities {
+    text-align: center;
+    text-size-adjust: 1rem;
+    padding: 0.8rem;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.container .activities-container .activities:hover {
+    transform: translateY(-6px);
+}
+
+.container .activities-container .activities img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+/* -------------------- Preview Modal -------------------- */
+.activities-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.activities-preview .preview {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    width: 40%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.activities-preview .preview.active {
+    display: inline-block;
+}
+
+.activities-preview .preview img {
+    width: 100%;
+    border-radius: 14px;
+}
+
+.activities h3{
+    font-family: 'Lora', serif;
+    color: #56280d;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+.activities-preview h3 {
+    font-family: 'Lora', serif;
+    color: #56280d;
+}
+
+.activities-preview .preview .stars {
+    color: #cba57a;
+    font-size: 1.2rem;
+}
+
+.activities-preview .preview p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.activities-preview .preview a {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #9f692bbc;
+    color: white;
+    font-size: 14px;
+    border-radius: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.activities-preview .preview a:hover {
+    background: #cba57a95;
+}
+
+.activities-preview .preview .fa-xmark {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: #56280d;
+    cursor: pointer;
+}
+
+.activities-preview .preview .fa-xmark:hover {
+    transform: rotate(180deg);
+}
+/* Button Styling */
+.add-btn {
+    width: 100%; /* Makes button fit the width of the card padding */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.add-to-trip {
+    background-color: #9f692bbc; /* Dark & Moody */
+    color: white;
+    border: none;
+    padding: 6px 13px;
+    border-radius: 17px; /* Pill shape */
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: auto; /* Pushes to bottom */
+}
+
+.add-to-trip:hover {
+    background-color: #cba57a95;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}

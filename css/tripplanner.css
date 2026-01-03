@@ -1,0 +1,221 @@
+/* -------------------- Body & Headings -------------------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #a16119;
+}
+h1::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #a16119; 
+  margin: 15px auto;
+  border-radius: 2px;
+}
+/* -------------------- Trip Moodboard -------------------- */
+.trip-board {
+  column-count: 4; 
+  column-gap: 15px;
+  width: 95%;
+  margin: 20px auto; 
+  
+}
+
+.trip-card {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  position: relative;
+  transition: transform 0.2s;
+  cursor: grab;
+}
+
+.trip-card:hover {
+  transform: scale(1.03);
+}
+
+.trip-card img {
+  width: 100%;
+  height: 100%; 
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-label {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.label-Hotel { background-color: #3498db; }   
+.label-Restaurant { background-color: #e74c3c; } 
+.label-Activity { background-color: #27ae60; }   
+
+.delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(255,0,0,0.8);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
+  z-index: 2;
+}
+
+.trip-card:hover .delete-btn {
+  display: block;
+}
+
+.trip-card p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 20px 10px 10px 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  background: linear-gradient(transparent, rgba(0,0,0,0.7)); 
+  display: none; 
+  z-index: 1;
+}
+
+.trip-card:hover p {
+  display: block;
+}
+
+/* -------------------- Navbar  -------------------- */
+.navbar {
+    background-color: #e9e3dcac;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 2px solid #784f1a;
+}
+
+.navbar-logo img {
+    height: 50px;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #784f1a;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: grey;
+}
+.navbar-toggler {
+    display: flex !important; 
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+    cursor: pointer;
+    border: none !important;
+    outline: none !important;
+    padding: 0;
+    width: 30px;
+    height: 20px;
+    position: relative;
+}
+
+.navbar-toggler::before,
+.navbar-toggler::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #56280d;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler::before {
+    width: 70%; 
+    align-self: flex-end;
+}
+
+.navbar-dropdown {
+    position: relative;
+}
+
+.navbar-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f4f0ec;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(30, 17, 1, 0.2);
+    z-index: 1000;
+    left: -140px;
+    top: 20px;
+    
+    border-radius: 15px; 
+    overflow: hidden;
+    border: 1px solid #784f1a3b;
+}
+.navbar-dropdown:hover .navbar-dropdown-content {
+    display: block;
+}
+.navbar-dropdown-content a {
+    color: #5f3c0e;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+.navbar-dropdown-content a:hover {
+    background-color: #784f1a3b;
+    color: #56280d;
+}
+.navbar-collapse {
+    display: flex !important;
+}
+
+/* -------------------- Responsive -------------------- */
+@media (max-width: 1200px) {
+  .trip-board {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 900px) {
+  .trip-board {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .trip-board {
+    column-count: 1;
+  }
+}

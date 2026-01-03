@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dubai Restaurants</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/restaurantstyle.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+        <a href="index.html" title="Home">
+          <img src="images/logo2.png" alt="Logo">
+        </a>
+    </div>
+    <div class="navbar-links">
+        <div class="navbar-dropdown">
+            <button class="navbar-toggler" type="button">
+                </button>
+            
+            <div class="navbar-dropdown-content">
+                <a href="index.html" target="_blank">Home</a>
+                <a href="hotels.html" target="_blank">Hotels</a>
+                <a href="restaurant.html" target="_blank">Restaurants</a>
+                <a href="activities.html" target="_blank">Activities</a>
+                <a href="trip-planner.html" target="_blank">Moodboard</a>
+            </div>
+        </div>
+    </div>
+</nav>
+      <header class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+          <h1 class="display-4">Restaurants in Dubai</h1>
+          <p class="lead">Find the best restaurants in Dubai</p>
+        </div>
+      </header>
+
+    <main>
+        <div class="filter-bar">
+            <button data-category="all" type="button" class="btn btn-outline-info">All</button>
+            <button data-category="drinks" type="button" class="btn btn-outline-info">Drinks</button>
+            <button data-category="dessert" type="button" class="btn btn-outline-info">Dessert</button>
+            <button data-category="fine-dining" type="button" class="btn btn-outline-info">Fine Dining</button>
+            <button data-category="casual-dining" type="button" class="btn btn-outline-info">Casual Dining</button>
+        </div>
+    </div>
+
+
+        <div class="category" data-category="drinks">
+            <h2 class="category-title">Drinks</h2>
+            <div class="restaurant">
+                <img src="images/restaurant/joe.jpeg" alt="Joe and the Juice">
+                <h3 class="restaurant-name">Joe and the Juice</h3>
+                <p class="restaurant-details">Location: Jumeirah Beach Road</p>
+                <button class="add-to-trip" data-name="Joe and the Juice" data-type="Restaurant" data-image="images/restaurant/joe.jpeg">✚ Add to Trip</button>
+            </div>
+            <div class="restaurant">
+                <img src="images/restaurant/kulture.jpg" alt="Kulture House">
+                <h3 class="restaurant-name">Kulture House</h3>
+                <p class="restaurant-details">Location: Dubai Mall</p>
+                <button class="add-to-trip" data-name="Kulture House" data-type="Restaurant" data-image="images/restaurant/kulture.jpg">✚ Add to Trip</button>
+            </div>
+            <div class="restaurant">
+                <img src="images/restaurant/mosaico.png" alt="Mosaico">
+                <h3 class="restaurant-name">Mosaico Lounge</h3>
+                <p class="restaurant-details">Location: Dubai Mall</p>
+                <button class="add-to-trip" data-name="Mosaico Lounge" data-type="Restaurant" data-image="images/restaurant/mosaico.png">✚ Add to Trip</button>
+            </div>
+        </div>
+
+        <div class="category" data-category="dessert">
+            <h2 class="category-title">Dessert</h2>
+            <div class="restaurant">
+                <img src="images/restaurant/brix.jpg" alt="Brix">
+                <h3 class="restaurant-name">Brix</h3>
+                <p class="restaurant-details">Location: Sheikh Zayed Road</p>
+                <button class="add-to-trip" data-name="Brix" data-type="Restaurant" data-image="images/restaurant/brix.jpg">✚ Add to Trip</button>
+            </div>
+            <div class="restaurant">
+                <img src="images/restaurant/bachir.jpeg" alt="Bachir Ice cream">
+                <h3 class="restaurant-name">Bachir Ice cream</h3>
+                <p class="restaurant-details">Location: Dubai Marina</p>
+                <button class="add-to-trip" data-name="Bachir Ice cream" data-type="Restaurant" data-image="images/restaurant/bachir.jpeg">✚ Add to Trip</button>
+            </div>
+            <div class="restaurant">
+                <img src="images/restaurant/yuki.png" alt="Yuki No Hana">
+                <h3 class="restaurant-name">Yuki No Hana</h3>
+                <p class="restaurant-details">Location: Dubai Marina</p>
+                <button class="add-to-trip" data-name="Yuki No Hana" data-type="Restaurant" data-image="images/restaurant/yuki.png">✚ Add to Trip</button>
+            </div>
+        </div>
+
+        <div class="category" data-category="fine-dining">
+            <h2 class="category-title">Fine Dining</h2>
+            <div class="restaurant">
+                <img src="images/restaurant/row.jpg" alt="Row on 45">
+                <h3 class="restaurant-name">Row on 45</h3>
+                <p class="restaurant-details">Location: City Walk</p>
+                <button class="add-to-trip" data-name="Row on 45" data-type="Restaurant" data-image="images/restaurant/row.jpg">✚ Add to Trip</button>
+            </div>
+            <div class="restaurant">
+                <img src="images/restaurant/okku.jpeg" alt="OKKU">
+                <h3 class="restaurant-name">OKKU</h3>
+                <p class="restaurant-details">Location: Palm Jumeirah</p>
+                <button class="add-to-trip" data-name="OKKU" data-type="Restaurant" data-image="images/restaurant/okku.jpeg">✚ Add to Trip</button>
+            </div>
+            <div class="restaurant">
+                <img src="images/restaurant/lanina.jpeg" alt="La Nina">
+                <h3 class="restaurant-name">La Nina</h3>
+                <p class="restaurant-details">Location: City Walk</p>
+                <button class="add-to-trip" data-name="La Nina" data-type="Restaurant" data-image="images/restaurant/lanina.jpeg">✚ Add to Trip</button>
+            </div>
+        </div>
+
+        <div class="category" data-category="casual-dining">
+            <h2 class="category-title">Casual Dining</h2>
+            <div class="restaurant">
+                <img src="images/restaurant/rascals.jpeg" alt="Rascals">
+                <h3 class="restaurant-name">Rascals</h3>
+                <p class="restaurant-details">Location: Al Barsha</p>
+                <button class="add-to-trip" data-name="Rascals" data-type="Restaurant" data-image="images/restaurant/rascals.jpeg">✚ Add to Trip</button>
+            </div>
+            <div class="restaurant">
+                <img src="images/restaurant/emmy.jpeg" alt="Emmy Squared">
+                <h3 class="restaurant-name">Emmy Squared</h3>
+                <p class="restaurant-details">Location: Dubai Marina</p>
+                <button class="add-to-trip" data-name="Emmy Squared" data-type="Restaurant" data-image="images/restaurant/emmy.jpeg">✚ Add to Trip</button>
+            </div>
+            <div class="restaurant">
+                <img src="images/restaurant/turkish.jpg" alt="Bosporus Turkish Cuisine">
+                <h3 class="restaurant-name">Bosporus Turkish Cuisine</h3>
+                <p class="restaurant-details">Location: Dubai Marina</p>
+                <button class="add-to-trip" data-name="Bosporus Turkish Cuisine" data-type="Restaurant" data-image="images/restaurant/turkish.jpg">✚ Add to Trip</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-bar button');
+        const categories = document.querySelectorAll('.category');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.getAttribute('data-category');
+                categories.forEach(categoryElement => {
+                    categoryElement.style.display = 'none';
+                    if (category === 'all' || categoryElement.getAttribute('data-category') === category) {
+                        categoryElement.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/trip.js"></script>
+
+</body>
+</html> 

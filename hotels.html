@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Hotels Page</title>
+    <link rel="stylesheet" href="css/hotelsstyle.css">
+</head>
+<body>
+      <nav class="navbar">
+    <div class="navbar-logo">
+        <a href="index.html" title="Home">
+          <img src="images/logo2.png" alt="Logo">
+        </a>
+    </div>
+    <div class="navbar-links">
+        <div class="navbar-dropdown">
+            <button class="navbar-toggler" type="button">
+                </button>
+            
+            <div class="navbar-dropdown-content">
+                <a href="index.html" target="_blank">Home</a>
+                <a href="hotels.html" target="_blank">Hotels</a>
+                <a href="restaurant.html" target="_blank">Restaurants</a>
+                <a href="activities.html" target="_blank">Activities</a>
+                <a href="trip-planner.html" target="_blank">Moodboard</a>
+            </div>
+        </div>
+    </div>
+</nav>
+    <header class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+          <h1 class="display-4">Hotels in Dubai</h1>
+          <p class="lead">Find the perfect one for you!</p>
+        </div>
+      </header>
+    <div class="container">
+        <div class="slider-container">
+            <p>Minimum: $0</p>
+            <input type="range" min="0" max="3000" value="0" class="slider" id="priceSlider">
+            <p>Maximum: $3000</p>
+        </div>
+        <div class="cards">
+    <div class="card" data-price="2300">
+        <img src="images/hotels/hotel1.jpg" alt="Palm Jumeirah Hotel">
+        <p>Palm Jumeirah Hotel</p>
+        <p>$2300 / night</p>
+        <button class="add-to-trip" data-name="Palm Jumeirah Hotel" data-type="Hotel" data-image="images/hotels/hotel1.jpg">✚ Add to Trip</button>
+    </div>
+    <div class="card" data-price="1200">
+        <img src="images/hotels/hotel2.jpg" alt="Four Seasons Resort">
+        <p>Four Seasons Resort</p>
+        <p>$1200 / night</p>
+        <button class="add-to-trip" data-name="Four Seasons Resort" data-type="Hotel" data-image="images/hotels/hotel2.jpg">✚ Add to Trip</button>
+    </div>
+    <div class="card" data-price="2000">
+        <img src="images/hotels/hotel3.jpg" alt="Bulgari Resort">
+        <p>Bulgari Resort</p>
+        <p>$2000 / night</p>
+        <button class="add-to-trip" data-name="Bulgari Resort" data-type="Hotel" data-image="images/hotels/hotel3.jpg">✚ Add to Trip</button>
+    </div>
+    <div class="card" data-price="900">
+        <img src="images/hotels/hotel4.jpg" alt="Paramount Hotel">
+        <p>Paramount Hotel</p>
+        <p>$900 / night</p>
+        <button class="add-to-trip" data-name="Paramount Hotel" data-type="Hotel" data-image="images/hotels/hotel4.jpg">✚ Add to Trip</button>
+    </div>
+    <div class="card" data-price="750">
+        <img src="images/hotels/hotel5.jpg" alt="JW Marriott Hotel">
+        <p>JW Marriott Hotel</p>
+        <p>$750 / night</p>
+        <button class="add-to-trip" data-name="JW Marriott Hotel" data-type="Hotel" data-image="images/hotels/hotel5.jpg">✚ Add to Trip</button>
+    </div>
+    <div class="card" data-price="650">
+        <img src="images/hotels/hotel6.jpg" alt="Atlantis The Palm">
+        <p>Atlantis The Palm</p>
+        <p>$650 / night</p>
+        <button class="add-to-trip" data-name="Atlantis The Palm" data-type="Hotel" data-image="images/hotels/hotel6.jpg">✚ Add to Trip</button>
+    </div>
+    <div class="card" data-price="220">
+        <img src="images/hotels/hotel7.jpg" alt="Swissotel Al Ghurair">
+        <p>Swissotel Al Ghurair</p>
+        <p>$220 / night</p>
+        <button class="add-to-trip" data-name="Swissotel Al Ghurair" data-type="Hotel" data-image="images/hotels/hotel7.jpg">✚ Add to Trip</button>
+    </div>
+    <div class="card" data-price="270">
+        <img src="images/hotels/hotel8.jpg" alt="Taj Dubai">
+        <p>Taj Dubai</p>
+        <p>$270 / night</p>
+        <button class="add-to-trip" data-name="Taj Dubai" data-type="Hotel" data-image="images/hotels/hotel8.jpg">✚ Add to Trip</button>
+    </div>
+    <div class="card" data-price="355">
+        <img src="images/hotels/hotel9.jpg" alt="Anatara The Palm">
+        <p>Anatara The Palm</p>
+        <p>$355 / night</p>
+        <button class="add-to-trip" data-name="Anatara The Palm" data-type="Hotel" data-image="images/hotels/hotel9.jpg">✚ Add to Trip</button>
+    </div>
+    <div class="card" data-price="530">
+        <img src="images/hotels/hotel10.jpg" alt="Sofitel Dubai">
+        <p>Sofitel Dubai </p>
+        <p>$530 / night</p>
+        <button class="add-to-trip" data-name="Sofitel Dubai" data-type="Hotel" data-image="images/hotels/hotel10.jpg">✚ Add to Trip</button>
+    </div>
+</div>
+
+    <script src="js/hotelsjavascript.js"></script>
+    <script src="js/trip.js"></script>
+</body>
+</html>
